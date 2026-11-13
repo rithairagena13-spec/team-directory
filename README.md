@@ -1,19 +1,107 @@
-# React + Vite
+# React Team Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive team directory built with **React 19, Vite, and Tailwind CSS**. This project demonstrates reusable React components, props, destructuring, array methods, and component composition.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Team Directory displays four team members with their names, professional roles, locations, skills, and availability status.
 
-## React Compiler
+Users can click the View button on each member card to log the selected team member's name in the browser console.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- Displays four team members.
+- Shows each member's name, role, city, and skills.
+- Displays Available or Busy status badges.
+- Responsive two-column member grid on medium and larger screens.
+- View buttons for selecting team members.
+- Displays the total number of members and available members.
+- Shows an empty-state message when there are no team members.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- JavaScript (JSX)
+- Tailwind CSS
+- HTML5
+
+## Project Structure
+
+```text
+team-directory/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── MemberCard.jsx
+│   │   ├── MemberGrid.jsx
+│   │   ├── Panel.jsx
+│   │   └── StatusBadge.jsx
+│   ├── data/
+│   │   └── team.js
+│   ├── pages/
+│   │   └── TeamDirectory.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Navigate into the project
+
+```bash
+cd team-directory
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## React Concepts Practiced
+
+- **Components:** Building reusable UI components.
+- **Props:** Passing data between parent and child components.
+- **Destructuring:** Extracting values from objects and props.
+- **Array map():** Rendering team member cards dynamically.
+- **Array filter():** Counting available team members.
+- **Conditional rendering:** Displaying availability badges and empty states.
+- **Event handling:** Handling clicks with callback functions.
+- **Keys:** Using unique member IDs when rendering lists.
+
+## Team Members
+
+| Name | Role | Location | Availability |
+|---|---|---|---|
+| Aline Uwase | Frontend Developer | Kigali | Available |
+| Eric Mugabo | Backend Developer | Huye | Busy |
+| Grace Umutoni | UI Designer | Kigali | Available |
+| Kevin Ndayisaba | QA Engineer | Musanze | Available |
+
+## Note
+
+This project does not use React state. It focuses on reusable components, props, data flow, and event handling.
+
+---
+
+**Project:** React Team Directory  
+**Status:** Completed
